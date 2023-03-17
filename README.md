@@ -10,22 +10,6 @@
 - CoreData - 데이터베이스
 
 📊 주요 기능
-기능	이름	설명	키워드
-class	AlertTimer
-TimerClass	- Timer의 클래스
-- 타이머 시작,정지,일시정지 기능
-- 타이머 푸시 알림 기능	ObservableObject
-UNUserNotifications
-	StopWatchClass	- StopWatch의 클래스
-- 기록 시간 리스트 추가	ObservableObject
-Entity
-	TimeListStore	- Coredata 호출 성공 유무	ObservableObject
-UserNotifications
-CoreData
-	List
-ContentList
-StopWatchStoreList	- List를 사용하기 위한 initalize	Identifiable
-ObservableObject
-	FormatterClass	- 날짜 formatter 설정	DateFormatter
-Delegate	AppDelegate	- 앱실행 시 Delegate 설정	NSObject
-UIApplicationDelegate
+
+![image](https://user-images.githubusercontent.com/31721255/225782194-cdecfbb4-905c-4048-b074-61cc6835caa6.png)
+
