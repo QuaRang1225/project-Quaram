@@ -34,12 +34,8 @@ class TimerClass:ObservableObject{
                 print(self.timeElapsed)
                 
             }
-            
         }
-        
-        
     }
-    
     func stop(){
         timer.invalidate()
         timeElapsed = 0.0

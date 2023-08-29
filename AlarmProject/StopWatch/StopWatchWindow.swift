@@ -12,7 +12,7 @@ import SwiftUI
 struct StopWatchWindow:View{
     
     @Environment(\.managedObjectContext) var mac
-    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Entity.stopwatchList, ascending: true)]) var stopList: FetchedResults<Entity>
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \WatchEntity.stopwatchList, ascending: true)]) var stopList: FetchedResults<WatchEntity>
     
     @EnvironmentObject var stopWatchClass : StopWatchClass
     @State private var animate = 0.0
@@ -106,6 +106,7 @@ struct StopWatchWindow:View{
             }.listStyle(PlainListStyle())
                 .scrollContentBackground(.hidden)
                 .padding()
+                .foregroundColor(.white)
 
             
         }
@@ -118,7 +119,7 @@ struct StopWatchWindow:View{
         try? mac.save()
     }
     func timeStore(){
-        let time = Entity(context:mac)
+        let time = WatchEntity(context:mac)
         time.stopwatchList = String(format: "%00.2f", stopWatchClass.timeElapsed)
         try? mac.save()
     }

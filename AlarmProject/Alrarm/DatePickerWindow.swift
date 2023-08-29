@@ -89,13 +89,7 @@ struct DatePickerWindow:View{
                     alarmListInterval.append(useTime)
                     alarmListInterval.sort()
                     
-
-                    
-                    
                     AlertAlarm().alertalram(timeinterval: alarmListInterval[alarmListInterval.count-1],listName: time.alarmText ?? "", listTime: String(FormatterClass.init().dateFormatter.string(from: wakeup)),repeatAlret: repeatMode)
-                    
-                   
-     
         
                 }){
                     Text("저장").fontWeight(.black).foregroundColor(.white).padding(5)
@@ -104,7 +98,7 @@ struct DatePickerWindow:View{
                 }
             
             }.padding(10)
-        }
+        }.foregroundColor(.white)
     }
 }
 struct DatePickerWindow_Previews: PreviewProvider {
