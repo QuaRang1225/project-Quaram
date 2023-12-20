@@ -29,7 +29,6 @@
 		816E6F2A288161E700E64482 /* AlarmProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816E6F29288161E700E64482 /* AlarmProjectUITestsLaunchTests.swift */; };
 		818CD75828A15FF600A9B25E /* AlertTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD75728A15FF600A9B25E /* AlertTimer.swift */; };
 		818CD75A28A206D600A9B25E /* AnalogClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD75928A206D600A9B25E /* AnalogClock.swift */; };
-		818CD75D28A2154300A9B25E /* ClcokWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD75C28A2154300A9B25E /* ClcokWindow.swift */; };
 		81A6BF072B327C9C00A4F4C9 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF062B327C9B00A4F4C9 /* Time.swift */; };
 		81A6BF092B327CD400A4F4C9 /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF082B327CD400A4F4C9 /* TimerMode.swift */; };
 		81A6BF0C2B327FD300A4F4C9 /* AlarmContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */; };
@@ -84,7 +83,6 @@
 		816E6F29288161E700E64482 /* AlarmProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		818CD75728A15FF600A9B25E /* AlertTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTimer.swift; sourceTree = "<group>"; };
 		818CD75928A206D600A9B25E /* AnalogClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClock.swift; sourceTree = "<group>"; };
-		818CD75C28A2154300A9B25E /* ClcokWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcokWindow.swift; sourceTree = "<group>"; };
 		81A6BF062B327C9B00A4F4C9 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		81A6BF082B327CD400A4F4C9 /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
 		81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmContainerManager.swift; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				818CD75928A206D600A9B25E /* AnalogClock.swift */,
-				818CD75C28A2154300A9B25E /* ClcokWindow.swift */,
 			);
 			path = AnalogClock;
 			sourceTree = "<group>";
@@ -391,7 +388,6 @@
 				8123962B2884FC1E0057EEFD /* ContentView.swift in Sources */,
 				8144C0092889C56A000E8570 /* AlarmProject.xcdatamodeld in Sources */,
 				81A6BF072B327C9C00A4F4C9 /* Time.swift in Sources */,
-				818CD75D28A2154300A9B25E /* ClcokWindow.swift in Sources */,
 				81A6BF122B328B1E00A4F4C9 /* StopWatchContainerManager.swift in Sources */,
 				8144C16828912474000E8570 /* AlertAlarm.swift in Sources */,
 				81690364288170A5007A1812 /* Banner.swift in Sources */,
