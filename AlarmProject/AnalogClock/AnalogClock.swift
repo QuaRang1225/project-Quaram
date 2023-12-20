@@ -69,7 +69,7 @@ struct AnalogClock:View{
         .foregroundColor(.white)
         .bold()
         .navigationBarBackButtonHidden()
-        .background(Image("NIGHT"))
+        .background(Image("NIGHT").resizable().ignoresSafeArea())
         
         
     }
