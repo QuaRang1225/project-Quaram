@@ -12,7 +12,6 @@
 		812396292884FB960057EEFD /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812396282884FB960057EEFD /* Alarm.swift */; };
 		8123962B2884FC1E0057EEFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123962A2884FC1E0057EEFD /* ContentView.swift */; };
 		8144C002288999CE000E8570 /* TimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C001288999CE000E8570 /* TimeList.swift */; };
-		8144C00428899B94000E8570 /* TimeListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C00328899B94000E8570 /* TimeListStore.swift */; };
 		8144C0092889C56A000E8570 /* AlarmProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8144C0072889C56A000E8570 /* AlarmProject.xcdatamodeld */; };
 		8144C164289110ED000E8570 /* DatePickerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C163289110ED000E8570 /* DatePickerWindow.swift */; };
 		8144C16628911723000E8570 /* FormatterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C16528911723000E8570 /* FormatterClass.swift */; };
@@ -33,6 +32,7 @@
 		818CD75D28A2154300A9B25E /* ClcokWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD75C28A2154300A9B25E /* ClcokWindow.swift */; };
 		81A6BF072B327C9C00A4F4C9 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF062B327C9B00A4F4C9 /* Time.swift */; };
 		81A6BF092B327CD400A4F4C9 /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF082B327CD400A4F4C9 /* TimerMode.swift */; };
+		81A6BF0C2B327FD300A4F4C9 /* ContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0B2B327FD300A4F4C9 /* ContainerManager.swift */; };
 		81B36A5728826221002528FA /* AlramList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B36A5628826221002528FA /* AlramList.swift */; };
 		81CA36E62897CC7700BFB9E6 /* StopWatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,6 @@
 		8123962A2884FC1E0057EEFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8140168E2886B44B009FA2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8144C001288999CE000E8570 /* TimeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeList.swift; sourceTree = "<group>"; };
-		8144C00328899B94000E8570 /* TimeListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeListStore.swift; sourceTree = "<group>"; };
 		8144C0082889C56A000E8570 /* AlarmProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmProject.xcdatamodel; sourceTree = "<group>"; };
 		8144C163289110ED000E8570 /* DatePickerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerWindow.swift; sourceTree = "<group>"; };
 		8144C16528911723000E8570 /* FormatterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterClass.swift; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		818CD75C28A2154300A9B25E /* ClcokWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcokWindow.swift; sourceTree = "<group>"; };
 		81A6BF062B327C9B00A4F4C9 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		81A6BF082B327CD400A4F4C9 /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
+		81A6BF0B2B327FD300A4F4C9 /* ContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerManager.swift; sourceTree = "<group>"; };
 		81B36A5628826221002528FA /* AlramList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlramList.swift; sourceTree = "<group>"; };
 		81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,7 +128,6 @@
 		8144C00628899BA8000E8570 /* Alrarm */ = {
 			isa = PBXGroup;
 			children = (
-				8144C00328899B94000E8570 /* TimeListStore.swift */,
 				81B36A5628826221002528FA /* AlramList.swift */,
 				812396282884FB960057EEFD /* Alarm.swift */,
 				8144C163289110ED000E8570 /* DatePickerWindow.swift */,
@@ -171,6 +170,7 @@
 		816E6F0B288161E500E64482 /* AlarmProject */ = {
 			isa = PBXGroup;
 			children = (
+				81A6BF0A2B327FAF00A4F4C9 /* Container */,
 				81A6BF052B327C9100A4F4C9 /* Object */,
 				818CD75B28A207D100A9B25E /* AnalogClock */,
 				810D05072898E5E800C41F9A /* Timer */,
@@ -225,6 +225,14 @@
 				81A6BF082B327CD400A4F4C9 /* TimerMode.swift */,
 			);
 			path = Object;
+			sourceTree = "<group>";
+		};
+		81A6BF0A2B327FAF00A4F4C9 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				81A6BF0B2B327FD300A4F4C9 /* ContainerManager.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		81CA36E92897FA0300BFB9E6 /* App */ = {
@@ -379,7 +387,6 @@
 				81690364288170A5007A1812 /* Banner.swift in Sources */,
 				8144C16D2891CE3A000E8570 /* StopWatchWindow.swift in Sources */,
 				8144C16628911723000E8570 /* FormatterClass.swift in Sources */,
-				8144C00428899B94000E8570 /* TimeListStore.swift in Sources */,
 				818CD75828A15FF600A9B25E /* AlertTimer.swift in Sources */,
 				812396292884FB960057EEFD /* Alarm.swift in Sources */,
 				8144C164289110ED000E8570 /* DatePickerWindow.swift in Sources */,
@@ -394,6 +401,7 @@
 				810D050B2898EFB000C41F9A /* TimerClass.swift in Sources */,
 				8144C002288999CE000E8570 /* TimeList.swift in Sources */,
 				81A6BF092B327CD400A4F4C9 /* TimerMode.swift in Sources */,
+				81A6BF0C2B327FD300A4F4C9 /* ContainerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

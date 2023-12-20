@@ -20,7 +20,7 @@ struct ContentView: View {
     @State private var stopWatch:Bool = false
     @State private var timer:Bool = false
     
-    init() {
+    init() {    //탭바 색깔 지정
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(Color.white)
@@ -60,7 +60,8 @@ struct ContentView: View {
                             Image(systemName: "timer")
                             Text("타이머")
                         }
-                }.accentColor(.black)
+                }
+                .accentColor(.black)
                    
             }
             
