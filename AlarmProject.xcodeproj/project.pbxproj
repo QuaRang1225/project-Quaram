@@ -13,7 +13,6 @@
 		8123962B2884FC1E0057EEFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123962A2884FC1E0057EEFD /* ContentView.swift */; };
 		8144C002288999CE000E8570 /* TimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C001288999CE000E8570 /* TimeList.swift */; };
 		8144C0092889C56A000E8570 /* AlarmProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8144C0072889C56A000E8570 /* AlarmProject.xcdatamodeld */; };
-		8144C164289110ED000E8570 /* DatePickerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C163289110ED000E8570 /* DatePickerWindow.swift */; };
 		8144C16628911723000E8570 /* FormatterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C16528911723000E8570 /* FormatterClass.swift */; };
 		8144C16828912474000E8570 /* AlertAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C16728912474000E8570 /* AlertAlarm.swift */; };
 		8144C16A2891CC7C000E8570 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C1692891CC7C000E8570 /* StopWatch.swift */; };
@@ -35,6 +34,7 @@
 		81A6BF102B32867900A4F4C9 /* AlarmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */; };
 		81A6BF122B328B1E00A4F4C9 /* StopWatchContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF112B328B1E00A4F4C9 /* StopWatchContainerManager.swift */; };
 		81A6BF142B328B6500A4F4C9 /* StopWatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF132B328B6500A4F4C9 /* StopWatchData.swift */; };
+		81A6BF182B32EC1D00A4F4C9 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF172B32EC1D00A4F4C9 /* KeyBoard.swift */; };
 		81B36A5728826221002528FA /* AlramList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B36A5628826221002528FA /* AlramList.swift */; };
 		81CA36E62897CC7700BFB9E6 /* StopWatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +64,6 @@
 		8140168E2886B44B009FA2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8144C001288999CE000E8570 /* TimeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeList.swift; sourceTree = "<group>"; };
 		8144C0082889C56A000E8570 /* AlarmProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmProject.xcdatamodel; sourceTree = "<group>"; };
-		8144C163289110ED000E8570 /* DatePickerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerWindow.swift; sourceTree = "<group>"; };
 		8144C16528911723000E8570 /* FormatterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterClass.swift; sourceTree = "<group>"; };
 		8144C16728912474000E8570 /* AlertAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAlarm.swift; sourceTree = "<group>"; };
 		8144C1692891CC7C000E8570 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmData.swift; sourceTree = "<group>"; };
 		81A6BF112B328B1E00A4F4C9 /* StopWatchContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchContainerManager.swift; sourceTree = "<group>"; };
 		81A6BF132B328B6500A4F4C9 /* StopWatchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchData.swift; sourceTree = "<group>"; };
+		81A6BF172B32EC1D00A4F4C9 /* KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
 		81B36A5628826221002528FA /* AlramList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlramList.swift; sourceTree = "<group>"; };
 		81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +134,6 @@
 			children = (
 				81B36A5628826221002528FA /* AlramList.swift */,
 				812396282884FB960057EEFD /* Alarm.swift */,
-				8144C163289110ED000E8570 /* DatePickerWindow.swift */,
 			);
 			path = Alrarm;
 			sourceTree = "<group>";
@@ -174,6 +173,7 @@
 		816E6F0B288161E500E64482 /* AlarmProject */ = {
 			isa = PBXGroup;
 			children = (
+				81A6BF162B32EC1300A4F4C9 /* Set */,
 				81A6BF152B32CD5900A4F4C9 /* Main */,
 				81A6BF0A2B327FAF00A4F4C9 /* Container */,
 				81A6BF052B327C9100A4F4C9 /* Object */,
@@ -248,6 +248,14 @@
 				8123962A2884FC1E0057EEFD /* ContentView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		81A6BF162B32EC1300A4F4C9 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				81A6BF172B32EC1D00A4F4C9 /* KeyBoard.swift */,
+			);
+			path = Set;
 			sourceTree = "<group>";
 		};
 		81CA36E92897FA0300BFB9E6 /* App */ = {
@@ -405,7 +413,6 @@
 				818CD75828A15FF600A9B25E /* AlertTimer.swift in Sources */,
 				81A6BF102B32867900A4F4C9 /* AlarmData.swift in Sources */,
 				812396292884FB960057EEFD /* Alarm.swift in Sources */,
-				8144C164289110ED000E8570 /* DatePickerWindow.swift in Sources */,
 				8144C16F2891DBE3000E8570 /* StopWatchClass.swift in Sources */,
 				81B36A5728826221002528FA /* AlramList.swift in Sources */,
 				81CA36E62897CC7700BFB9E6 /* StopWatchButton.swift in Sources */,
@@ -413,6 +420,7 @@
 				8144C16A2891CC7C000E8570 /* StopWatch.swift in Sources */,
 				810D05092898E6E200C41F9A /* TimerWindow.swift in Sources */,
 				816E6F0D288161E500E64482 /* AlarmProjectApp.swift in Sources */,
+				81A6BF182B32EC1D00A4F4C9 /* KeyBoard.swift in Sources */,
 				818CD75A28A206D600A9B25E /* AnalogClock.swift in Sources */,
 				810D050B2898EFB000C41F9A /* TimerClass.swift in Sources */,
 				8144C002288999CE000E8570 /* TimeList.swift in Sources */,

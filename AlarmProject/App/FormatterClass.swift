@@ -10,29 +10,9 @@ class FormatterClass{
     
     static let shared = FormatterClass()
     
-    var yearFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy'년' MM'월' dd'일' a HH':'mm':'ss"
-        return formatter
-        
-    }
-//    var dateFormatter: DateFormatter {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "HH':'mm a"
-//        return formatter
-//        
-//    }
-   
-    
     var timerFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH':'mm':'ss"
-        return formatter
-        
-    }
-    var yearsettingFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy'년' MM'월' dd'일' a HH':'mm':'00"
         return formatter
         
     }
@@ -44,20 +24,49 @@ class FormatterClass{
     }
     
     
+    var yearFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy'년' MM'월' dd'일' a HH':'mm':'ss"
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.timeZone = TimeZone(abbreviation: "KST")
+        return formatter
+        
+    }
+    var yearsettingFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.timeZone = TimeZone(abbreviation: "KST")
+        formatter.dateFormat = "yyyy'년' MM'월' dd'일' a HH':'mm':'00"
+        return formatter
+        
+    }
+    var HourminuteForMatter:DateFormatter{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh':'mm"
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.timeZone = TimeZone(abbreviation: "KST")
+        return formatter
+    }
     var timeFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh':'mm':'ss"
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.timeZone = TimeZone(abbreviation: "KST")
         return formatter
     }
     var meridiemFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "a"
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.timeZone = TimeZone(abbreviation: "KST")
         return formatter
     }
     
     var dateFormatter:DateFormatter{
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy'/'MM'/'dd"
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.timeZone = TimeZone(abbreviation: "KST")
         return formatter
     }
     

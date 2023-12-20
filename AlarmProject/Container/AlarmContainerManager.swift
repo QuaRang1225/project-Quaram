@@ -44,6 +44,15 @@ class AlarmContainerManager: ObservableObject {
             print("save 실패 \(error.localizedDescription)")
         }
     }
+    func deleteBooks(at offsets: IndexSet){
+        guard let index = offsets.first else {return}
+        let entity = alarmList[index]
+        AlertAlarm.caancelAlarm(id: entity.id ?? "")  //알람 취소
+        container.viewContext.delete(entity)
+        saveData()
+       
+        
+    }
     
     // 알림 데이터를 추가하는 메서드
     func addData(alarm: AlarmData) {

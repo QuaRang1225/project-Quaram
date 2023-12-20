@@ -10,12 +10,11 @@ import SwiftUI
 
 class AlertAlarm{
     
-    static var name:String = ""
-    static var num  = 0
+  
     
-    func alertalram(timeinterval:Int,listName:String,listTime:String,repeatAlret:Bool){
+    static func alertalram(timeinterval:Int,alarm:AlarmData){
         
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert ,.badge,.sound,]){ success, error in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert ,.badge,.sound]){ success, error in
             if success{
                 print("허용")
             }else if let error = error{
@@ -23,38 +22,25 @@ class AlertAlarm{
             }
         }
         let content = UNMutableNotificationContent()
-        if listName == ""{
-            content.title = "unknown"
-        }else{
-            content.title = listName
-        }
-        content.subtitle = "예약 시간 \(listTime)"
+        
+        content.title = alarm.title == "" ? "알람" : alarm.title
+        content.subtitle = "예약 시간 \(alarm.time)"
         content.sound = UNNotificationSound.default
-        let sentence = listName + listTime
+        
         let triger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(timeinterval)-1, repeats: false)
-        let request = UNNotificationRequest(identifier: sentence, content: content, trigger: triger)
+        let request = UNNotificationRequest(identifier: alarm.id, content: content, trigger: triger)
         UNUserNotificationCenter.current().add(request){ (err) in
             if err != nil{
                 print("에러")
             }
         }
-        
-        
-
-        
-        print(sentence)
-        
-
-        
-
     }
-    func caancelAlarm(name:String,num: String){
+    
+    static func caancelAlarm(id:String){
 
         let center = UNUserNotificationCenter.current()
-        let sentence = name + num
-        center.removeDeliveredNotifications(withIdentifiers: [sentence,sentence + "1"])
-        center.removePendingNotificationRequests(withIdentifiers: [sentence,sentence + "1"])
-        print(sentence)
+        center.removeDeliveredNotifications(withIdentifiers: [id])
+        center.removePendingNotificationRequests(withIdentifiers: [id])
         
     }
     
