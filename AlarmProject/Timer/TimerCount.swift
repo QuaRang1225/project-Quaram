@@ -10,11 +10,11 @@ import SwiftUI
 
 struct TimerCount:View{
     
-    @Binding var timer  : Bool
-    
-    init(timer:Binding<Bool> = .constant(false)){
-        _timer = timer
-    }
+//    @Binding var timer  : Bool
+//    
+//    init(timer:Binding<Bool> = .constant(false)){
+//        _timer = timer
+//    }
     var body: some View{
         ZStack(alignment: .topLeading){
                 

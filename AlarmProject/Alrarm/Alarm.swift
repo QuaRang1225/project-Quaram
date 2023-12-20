@@ -22,17 +22,17 @@ struct Alarm:View{
     @State private var current = Date()
     @State var currentDate = Date()
     @State var timeName = String()
-    @Binding var alarm : Bool
+//    @Binding var alarm : Bool
     
     
     @Environment(\.managedObjectContext) var mac
-    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Entity.time, ascending: true),NSSortDescriptor(keyPath: \Entity.alarmText, ascending: true)]) var timeList: FetchedResults<Entity>
+//    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Entity.time, ascending: true),NSSortDescriptor(keyPath: \Entity.alarmText, ascending: true)]) var timeList: FetchedResults<Entity>
  
     
-    init(alarm:Binding<Bool> = .constant(false)){
-        _alarm = alarm
-        
-    }
+//    init(alarm:Binding<Bool> = .constant(false)){
+//        _alarm = alarm
+//        
+//    }
     var body: some View{
         ZStack{
             Image("NIGHT").resizable().edgesIgnoringSafeArea(.all)
@@ -51,15 +51,14 @@ struct Alarm:View{
 
                 
                 List{
-                    ForEach(timeList){ list in
-                        AlarmList(time: list.time ?? "" ,content: list.alarmText ?? "unknown" )
-                            .onAppear(){
-                            timeName = list.alarmText ?? "unknown"
-                            }
-                            .listRowBackground(Color.white.opacity(0))
-                        
-                    }.onDelete(perform: deleteBooks)
-                         
+//                    ForEach(timeList){ list in
+//                        AlarmList(time: list.time ?? "" ,content: list.alarmText ?? "unknown" )
+//                            .onAppear(){
+//                            timeName = list.alarmText ?? "unknown"
+//                            }
+//                            .listRowBackground(Color.white.opacity(0))
+//                        
+//                    }.onDelete(perform: deleteBooks)
                 }.listStyle(PlainListStyle())
             }
         }
@@ -68,11 +67,11 @@ struct Alarm:View{
     func deleteBooks(at offsets: IndexSet) {
         
         guard let index = offsets.first else { return }
-        let times = timeList[index]
-        AlertAlarm().caancelAlarm(name: times.alarmText ?? "unknown",num: times.time ?? "")
+//        let times = timeList[index]
+//        AlertAlarm().caancelAlarm(name: times.alarmText ?? "unknown",num: times.time ?? "")
 //        print(times.alarmText ?? "unknown")
 //        print(index)
-        mac.delete(times)
+//        mac.delete(times)
         try? mac.save()
         
         

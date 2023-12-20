@@ -69,9 +69,9 @@ struct DatePickerWindow:View{
                     self.item += 1
                     self.save = true
                     
-                    let time = Entity(context:mac)
-                    time.alarmText = content
-                    time.time = pushTimeString
+//                    let time = Entity(context:mac)
+//                    time.alarmText = content
+//                    time.time = pushTimeString
                     try? mac.save()
 
 
@@ -88,8 +88,8 @@ struct DatePickerWindow:View{
                     
                     alarmListInterval.append(useTime)
                     alarmListInterval.sort()
-                    
-                    AlertAlarm().alertalram(timeinterval: alarmListInterval[alarmListInterval.count-1],listName: time.alarmText ?? "", listTime: String(FormatterClass.init().dateFormatter.string(from: wakeup)),repeatAlret: repeatMode)
+//                    
+//                    AlertAlarm().alertalram(timeinterval: alarmListInterval[alarmListInterval.count-1],listName: time.alarmText ?? "", listTime: String(FormatterClass.init().dateFormatter.string(from: wakeup)),repeatAlret: repeatMode)
         
                 }){
                     Text("저장").fontWeight(.black).foregroundColor(.white).padding(5)

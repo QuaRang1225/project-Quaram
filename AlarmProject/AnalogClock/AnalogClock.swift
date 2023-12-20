@@ -3,12 +3,12 @@ import Foundation
 
 struct AnalogClock:View{
     
-    
-    @Binding var analogClock  : Bool
-    
-    init(analogClock:Binding<Bool> = .constant(false)){
-        _analogClock = analogClock
-    }
+//    
+//    @Binding var analogClock  : Bool
+//    
+//    init(analogClock:Binding<Bool> = .constant(false)){
+//        _analogClock = analogClock
+//    }
     
     var body: some View{
         ZStack(alignment: .topLeading){

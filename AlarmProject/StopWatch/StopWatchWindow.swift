@@ -12,7 +12,7 @@ import SwiftUI
 struct StopWatchWindow:View{
     
     @Environment(\.managedObjectContext) var mac
-    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \WatchEntity.stopwatchList, ascending: true)]) var stopList: FetchedResults<WatchEntity>
+//    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \WatchEntity.stopwatchList, ascending: true)]) var stopList: FetchedResults<WatchEntity>
     
     @EnvironmentObject var stopWatchClass : StopWatchClass
     @State private var animate = 0.0
@@ -99,10 +99,10 @@ struct StopWatchWindow:View{
             }
             
             List{
-                ForEach(stopList){ lap in
-                    Text("\(lap.stopwatchList ?? "")초")
-                }.onDelete(perform: deleteList)
-                    .listRowBackground(Color.clear)
+//                ForEach(stopList){ lap in
+//                    Text("\(lap.stopwatchList ?? "")초")
+//                }.onDelete(perform: deleteList)
+//                    .listRowBackground(Color.clear)
             }.listStyle(PlainListStyle())
                 .scrollContentBackground(.hidden)
                 .padding()
@@ -114,13 +114,13 @@ struct StopWatchWindow:View{
     }
     func deleteList(at offsets: IndexSet) {
         guard let index = offsets.first else { return }
-        let times = stopList[index]
-        mac.delete(times)
+//        let times = stopList[index]
+//        mac.delete(times)
         try? mac.save()
     }
     func timeStore(){
-        let time = WatchEntity(context:mac)
-        time.stopwatchList = String(format: "%00.2f", stopWatchClass.timeElapsed)
+//        let time = WatchEntity(context:mac)
+//        time.stopwatchList = String(format: "%00.2f", stopWatchClass.timeElapsed)
         try? mac.save()
     }
 }
