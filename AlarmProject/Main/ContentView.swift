@@ -10,15 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-//    @State var currentDate = Date()
-    
-//    @StateObject private var store = AlarmContainerManager()
-//    @StateObject var timerClass = TimerClass()
-//    @StateObject var stopWatchClass = StopWatchClass()
-//    @State private var analogClock:Bool = false
-//    @State private var alarm:Bool = false
-//    @State private var stopWatch:Bool = false
-//    @State private var timer:Bool = false
     
     init() {    //탭바 색깔 지정
         let appearance = UITabBarAppearance()
@@ -46,19 +37,16 @@ struct ContentView: View {
                             Text("시계")
                         }
                     Alarm()
-//                        .environment(\.managedObjectContext, store.container.viewContext)
                         .tabItem {
                             Image(systemName: "alarm.fill")
                             Text("알람")
                         }
                     StopWatch()
-//                        .environment(\.managedObjectContext, store.container.viewContext).environmentObject(stopWatchClass)
                         .tabItem {
                             Image(systemName: "stopwatch.fill")
                             Text("스톱워차")
                         }
                     TimerCount()
-//                        .environment(\.managedObjectContext, store.container.viewContext).environmentObject(timerClass)
                         .tabItem {
                             Image(systemName: "timer")
                             Text("타이머")
@@ -69,13 +57,6 @@ struct ContentView: View {
             }
             
         }
-//        .onAppear(){
-//            self.analogClock = true
-//            self.alarm = true
-//            self.stopWatch = true
-//            self.timer = true
-//    }
-        
     }
 }
 

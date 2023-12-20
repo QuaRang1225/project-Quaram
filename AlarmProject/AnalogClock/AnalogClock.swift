@@ -55,14 +55,16 @@ struct AnalogClock:View{
                    setCurrentTime()
                 }
             
-            Text(FormatterClass.init().dateFormatter.string(from: currentDate))
-                .font(.system(size: 40)).fontWeight(.black)
-                .foregroundColor(.white)
-                .onReceive(timer) { input in
-                    self.currentDate = input
-                }
-                .padding(.top)
+            Text(FormatterClass.shared.dateFormatter.string(from: currentDate) + " (\(FormatterClass.shared.weekdayStringFromInt())) " + FormatterClass.shared.meridiemFormatter.string(from: currentDate))
+                .padding(.top,40)
+            Text(FormatterClass.shared.timeFormatter.string(from: currentDate))
+                .font(.largeTitle)
+               
+                
             Spacer()
+        }
+        .onReceive(timer) { input in
+            self.currentDate = input
         }
         .foregroundColor(.white)
         .bold()
