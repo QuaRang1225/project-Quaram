@@ -8,15 +8,11 @@
 import Foundation
 import SwiftUI
 
-enum mode{
-    case run
-    case stop
-    case pause
-}
+
 class StopWatchClass:ObservableObject{
     
     @Published var timeElapsed = 0.00
-    @Published var stopMode:mode = .stop
+    @Published var stopMode:TimerMode = .stop
     
     var timer = Timer()
     func start(){

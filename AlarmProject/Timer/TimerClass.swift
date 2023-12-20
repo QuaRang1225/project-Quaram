@@ -9,17 +9,13 @@ import Foundation
 import SwiftUI
 import CoreData
 
-enum modeTimer{
-    case run
-    case stop
-    case pause
-}
+
 class TimerClass:ObservableObject{
     
     
     @Published var timeElapsed:Double = 0.0
     
-    @Published var stopMode:modeTimer = .stop
+    @Published var stopMode:TimerMode = .stop
 
     
     var timer = Timer()

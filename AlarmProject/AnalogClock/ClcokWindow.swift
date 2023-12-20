@@ -8,11 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Time{
-    var hour :Int
-    var minute:Int
-    var second:Int
-}
+
 
 struct ClockWindow:View{
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Timer{
+enum TimerMode{
     case run
     case stop
     case pause
