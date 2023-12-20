@@ -25,7 +25,7 @@ struct ClockWindow:View{
         VStack{
             
             Spacer()
-           // Text(Locale.current.localizedString(forRegionCode: Locale.current.regionCode!) ?? "").font(.largeTitle).foregroundColor(.indigo)                .fontWeight(.black)                .padding(.top, 40)
+                .padding(.top, 40)
                 HStack{
                     Spacer()
                     ZStack{
