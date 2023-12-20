@@ -34,6 +34,8 @@
 		81A6BF092B327CD400A4F4C9 /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF082B327CD400A4F4C9 /* TimerMode.swift */; };
 		81A6BF0C2B327FD300A4F4C9 /* AlarmContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */; };
 		81A6BF102B32867900A4F4C9 /* AlarmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */; };
+		81A6BF122B328B1E00A4F4C9 /* StopWatchContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF112B328B1E00A4F4C9 /* StopWatchContainerManager.swift */; };
+		81A6BF142B328B6500A4F4C9 /* StopWatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF132B328B6500A4F4C9 /* StopWatchData.swift */; };
 		81B36A5728826221002528FA /* AlramList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B36A5628826221002528FA /* AlramList.swift */; };
 		81CA36E62897CC7700BFB9E6 /* StopWatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,8 @@
 		81A6BF082B327CD400A4F4C9 /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
 		81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmContainerManager.swift; sourceTree = "<group>"; };
 		81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmData.swift; sourceTree = "<group>"; };
+		81A6BF112B328B1E00A4F4C9 /* StopWatchContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchContainerManager.swift; sourceTree = "<group>"; };
+		81A6BF132B328B6500A4F4C9 /* StopWatchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchData.swift; sourceTree = "<group>"; };
 		81B36A5628826221002528FA /* AlramList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlramList.swift; sourceTree = "<group>"; };
 		81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +230,7 @@
 				81A6BF062B327C9B00A4F4C9 /* Time.swift */,
 				81A6BF082B327CD400A4F4C9 /* TimerMode.swift */,
 				81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */,
+				81A6BF132B328B6500A4F4C9 /* StopWatchData.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */,
+				81A6BF112B328B1E00A4F4C9 /* StopWatchContainerManager.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -386,10 +392,12 @@
 				8144C0092889C56A000E8570 /* AlarmProject.xcdatamodeld in Sources */,
 				81A6BF072B327C9C00A4F4C9 /* Time.swift in Sources */,
 				818CD75D28A2154300A9B25E /* ClcokWindow.swift in Sources */,
+				81A6BF122B328B1E00A4F4C9 /* StopWatchContainerManager.swift in Sources */,
 				8144C16828912474000E8570 /* AlertAlarm.swift in Sources */,
 				81690364288170A5007A1812 /* Banner.swift in Sources */,
 				8144C16D2891CE3A000E8570 /* StopWatchWindow.swift in Sources */,
 				8144C16628911723000E8570 /* FormatterClass.swift in Sources */,
+				81A6BF142B328B6500A4F4C9 /* StopWatchData.swift in Sources */,
 				818CD75828A15FF600A9B25E /* AlertTimer.swift in Sources */,
 				81A6BF102B32867900A4F4C9 /* AlarmData.swift in Sources */,
 				812396292884FB960057EEFD /* Alarm.swift in Sources */,

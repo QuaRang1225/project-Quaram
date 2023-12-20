@@ -1,16 +1,17 @@
 //
-//  ContainerManager.swift
+//  StopWatchContainerManager.swift
 //  AlarmProject
 //
 //  Created by 유영웅 on 12/20/23.
 //
 
+
 import Foundation
 import CoreData
 
-class AlarmContainerManager: ObservableObject {
+class StopWatchContainerManager: ObservableObject {
     
-    @Published var alarmList: [AlarmEntity] = []
+    @Published var stopWatchList: [StopWatchEntity] = []
     
     // NSPersistentContainer를 생성하고 초기화하는 클래스의 생성자
     let container = NSPersistentContainer(name: "AlarmProject")
@@ -27,9 +28,9 @@ class AlarmContainerManager: ObservableObject {
     
     // CoreData에서 데이터를 불러와 알림 목록에 할당하는 메서드
     private func fetchData() {
-        let request = NSFetchRequest<AlarmEntity>(entityName: "AlarmEntity")
+        let request = NSFetchRequest<StopWatchEntity>(entityName: "StopWatchEntity")
         do {
-            alarmList = try container.viewContext.fetch(request)
+            stopWatchList = try container.viewContext.fetch(request)
         } catch let error {
             print("fetch 실패 \(error.localizedDescription)")
         }
@@ -46,13 +47,12 @@ class AlarmContainerManager: ObservableObject {
     }
     
     // 알림 데이터를 추가하는 메서드
-    func addData(alarm: AlarmData) {
+    func addData(stopWatch: StopWatchData) {
         // 새로운 AlarmEntity 인스턴스를 생성하여 CoreData에 추가
-        let newAlarm = AlarmEntity(context: container.viewContext)
+        let newTime = StopWatchEntity(context: container.viewContext)
         // 전달된 AlarmData의 속성을 새로운 AlarmEntity에 할당
-        newAlarm.id = alarm.id
-        newAlarm.title = alarm.title
-        newAlarm.time = alarm.time
+        newTime.id = stopWatch.id
+        newTime.time = stopWatch.time
         saveData()
     }
 }
