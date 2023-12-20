@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @State var currentDate = Date()
     
-    @StateObject private var store = TimeListStore()
+    @StateObject private var store = AlarmContainerManager()
     @StateObject var timerClass = TimerClass()
     @StateObject var stopWatchClass = StopWatchClass()
     @State private var analogClock:Bool = false

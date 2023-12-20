@@ -32,7 +32,8 @@
 		818CD75D28A2154300A9B25E /* ClcokWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD75C28A2154300A9B25E /* ClcokWindow.swift */; };
 		81A6BF072B327C9C00A4F4C9 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF062B327C9B00A4F4C9 /* Time.swift */; };
 		81A6BF092B327CD400A4F4C9 /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF082B327CD400A4F4C9 /* TimerMode.swift */; };
-		81A6BF0C2B327FD300A4F4C9 /* ContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0B2B327FD300A4F4C9 /* ContainerManager.swift */; };
+		81A6BF0C2B327FD300A4F4C9 /* AlarmContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */; };
+		81A6BF102B32867900A4F4C9 /* AlarmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */; };
 		81B36A5728826221002528FA /* AlramList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B36A5628826221002528FA /* AlramList.swift */; };
 		81CA36E62897CC7700BFB9E6 /* StopWatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */; };
 /* End PBXBuildFile section */
@@ -84,7 +85,8 @@
 		818CD75C28A2154300A9B25E /* ClcokWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcokWindow.swift; sourceTree = "<group>"; };
 		81A6BF062B327C9B00A4F4C9 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		81A6BF082B327CD400A4F4C9 /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
-		81A6BF0B2B327FD300A4F4C9 /* ContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerManager.swift; sourceTree = "<group>"; };
+		81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmContainerManager.swift; sourceTree = "<group>"; };
+		81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmData.swift; sourceTree = "<group>"; };
 		81B36A5628826221002528FA /* AlramList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlramList.swift; sourceTree = "<group>"; };
 		81CA36E52897CC7700BFB9E6 /* StopWatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +225,7 @@
 			children = (
 				81A6BF062B327C9B00A4F4C9 /* Time.swift */,
 				81A6BF082B327CD400A4F4C9 /* TimerMode.swift */,
+				81A6BF0F2B32867900A4F4C9 /* AlarmData.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -230,7 +233,7 @@
 		81A6BF0A2B327FAF00A4F4C9 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				81A6BF0B2B327FD300A4F4C9 /* ContainerManager.swift */,
+				81A6BF0B2B327FD300A4F4C9 /* AlarmContainerManager.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				8144C16D2891CE3A000E8570 /* StopWatchWindow.swift in Sources */,
 				8144C16628911723000E8570 /* FormatterClass.swift in Sources */,
 				818CD75828A15FF600A9B25E /* AlertTimer.swift in Sources */,
+				81A6BF102B32867900A4F4C9 /* AlarmData.swift in Sources */,
 				812396292884FB960057EEFD /* Alarm.swift in Sources */,
 				8144C164289110ED000E8570 /* DatePickerWindow.swift in Sources */,
 				8144C16F2891DBE3000E8570 /* StopWatchClass.swift in Sources */,
@@ -401,7 +405,7 @@
 				810D050B2898EFB000C41F9A /* TimerClass.swift in Sources */,
 				8144C002288999CE000E8570 /* TimeList.swift in Sources */,
 				81A6BF092B327CD400A4F4C9 /* TimerMode.swift in Sources */,
-				81A6BF0C2B327FD300A4F4C9 /* ContainerManager.swift in Sources */,
+				81A6BF0C2B327FD300A4F4C9 /* AlarmContainerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
