@@ -62,8 +62,9 @@ struct TimerCount:View{
         let diffTime = curTime.distance(to: startTime)
         let result = Double(diffTime.formatted())!
         
-        //타이머 작동 시간동안 가장 처음에 설정한 시간에서 이 메서드가 호출된 시점 즉 active모드 진입 시까지의 시간을 빼서 시간차이를 계산
-        if !timerClass.timer.isValid{
+        //타이머가 유효하고 일시정시 상태가 아닐때 가장 처음에 설정한 시간에서 이 메서드가 호출된 시점 즉 active모드 진입 시까지의 시간을 빼서 시간차이를 계산
+        print(timerClass.stopMode)
+        if !timerClass.timer.isValid,timerClass.stopMode != .pause{
             timerClass.timeElapsed = totalTime + result
         }
         
@@ -110,15 +111,16 @@ struct TimerCount:View{
                    
                     if totalTime > 0{
                         startTime = Date.now
-                        AlertTimer().alretTimer(timeinterval: Int(totalTime), timeName: getTimeString(time: totalTime))
+                        AlertTimer().alretTimer(timeinterval: totalTime, timeName: getTimeString(time: totalTime))
                     }
                 case .run:
                     timerClass.pause()
+                    stopTime = Date.now
                     AlertTimer().caancelAlarm()
                 case .pause:
                     timerClass.start()
                     startTime = stopTime
-                    AlertTimer().alretTimer(timeinterval: Int(totalTime), timeName: getTimeString(time: totalTime))
+                    AlertTimer().alretTimer(timeinterval: timerClass.timeElapsed, timeName: getTimeString(time: totalTime))
                 }
             } label: {
                 Image(systemName: timerClass.stopMode.image)
