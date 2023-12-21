@@ -14,7 +14,9 @@ struct StopWatchButton:View{
     
     var body: some View{
         
-        Image(systemName: image).font(.system(size: 50)).foregroundColor(.white)
+        Image(systemName: image)
+            .font(.system(size: 50))
+            .foregroundColor(.white)
             
         
     }
@@ -23,6 +25,7 @@ struct StopWatchButton:View{
 struct StopWatchButton_Previews: PreviewProvider {
 static var previews: some View {
     StopWatchButton(image: "stop.fill")
+        .background(.red)
 }
 }
 
