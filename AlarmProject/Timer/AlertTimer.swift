@@ -10,7 +10,7 @@ import SwiftUI
 
 class AlertTimer{
     
-    func alretTimer(timeinterval:Int,timeName:String){
+    func alretTimer(timeinterval:Double,timeName:String){
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert ,.badge,.sound,]){ success, error in
             if success{

@@ -9,29 +9,22 @@ import Foundation
 import SwiftUI
 import CoreData
 
-enum modeTimer{
-    case run
-    case stop
-    case pause
-}
+
 class TimerClass:ObservableObject{
     
     
     @Published var timeElapsed:Double = 0.0
-    
-    @Published var stopMode:modeTimer = .stop
+    @Published var stopMode:TimerMode = .stop
 
     
     var timer = Timer()
     func start(){
         stopMode = .run
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){ timer in
-            
             self.timeElapsed -= 0.1
             if self.timeElapsed <= 0{
                 timer.invalidate()
                 self.stopMode = .stop
-                print(self.timeElapsed)
                 
             }
         }

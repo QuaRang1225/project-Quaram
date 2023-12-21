@@ -10,17 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var currentDate = Date()
     
-    @StateObject private var store = TimeListStore()
-    @StateObject var timerClass = TimerClass()
-    @StateObject var stopWatchClass = StopWatchClass()
-    @State private var analogClock:Bool = false
-    @State private var alarm:Bool = false
-    @State private var stopWatch:Bool = false
-    @State private var timer:Bool = false
-    
-    init() {
+    init() {    //탭바 색깔 지정
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(Color.white)
@@ -40,37 +31,32 @@ struct ContentView: View {
             ZStack(alignment: .top){
                 Image("NIGHT").resizable().edgesIgnoringSafeArea(.vertical).edgesIgnoringSafeArea(.horizontal)
                 TabView{
-                    AnalogClock(analogClock:self.$analogClock)
+                    AnalogClock()
                         .tabItem {
                             Image(systemName: "clock")
                             Text("시계")
                         }
-                    Alarm(alarm:self.$alarm).environment(\.managedObjectContext, store.container.viewContext)
+                    Alarm()
                         .tabItem {
                             Image(systemName: "alarm.fill")
                             Text("알람")
                         }
-                    StopWatch(stopWatch:self.$stopWatch).environment(\.managedObjectContext, store.container.viewContext).environmentObject(stopWatchClass)
+                    StopWatch()
                         .tabItem {
                             Image(systemName: "stopwatch.fill")
                             Text("스톱워차")
                         }
-                    TimerCount(timer:self.$timer).environment(\.managedObjectContext, store.container.viewContext).environmentObject(timerClass)
+                    TimerCount()
                         .tabItem {
                             Image(systemName: "timer")
                             Text("타이머")
                         }
-                }.accentColor(.black)
+                }
+                .accentColor(.black)
                    
             }
             
-        } .onAppear(){
-            self.analogClock = true
-            self.alarm = true
-            self.stopWatch = true
-            self.timer = true
-    }
-        
+        }
     }
 }
 
