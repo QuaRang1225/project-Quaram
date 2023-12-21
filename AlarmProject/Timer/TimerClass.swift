@@ -14,7 +14,6 @@ class TimerClass:ObservableObject{
     
     
     @Published var timeElapsed:Double = 0.0
-    
     @Published var stopMode:TimerMode = .stop
 
     
@@ -22,12 +21,10 @@ class TimerClass:ObservableObject{
     func start(){
         stopMode = .run
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){ timer in
-            
             self.timeElapsed -= 0.1
             if self.timeElapsed <= 0{
                 timer.invalidate()
                 self.stopMode = .stop
-                print(self.timeElapsed)
                 
             }
         }

@@ -11,4 +11,13 @@ enum TimerMode{
     case run
     case stop
     case pause
+    
+    var image:String{
+        switch self{
+        case .stop,.pause:
+            return "play.fill"
+        case .run:
+            return "pause.fill"
+        }
+    }
 }

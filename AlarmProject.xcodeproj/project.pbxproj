@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		810D05092898E6E200C41F9A /* TimerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810D05082898E6E200C41F9A /* TimerWindow.swift */; };
 		810D050B2898EFB000C41F9A /* TimerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810D050A2898EFB000C41F9A /* TimerClass.swift */; };
 		812396292884FB960057EEFD /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812396282884FB960057EEFD /* Alarm.swift */; };
 		8123962B2884FC1E0057EEFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123962A2884FC1E0057EEFD /* ContentView.swift */; };
@@ -56,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		810D05082898E6E200C41F9A /* TimerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindow.swift; sourceTree = "<group>"; };
 		810D050A2898EFB000C41F9A /* TimerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerClass.swift; sourceTree = "<group>"; };
 		812396282884FB960057EEFD /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		8123962A2884FC1E0057EEFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				81690367288197CE007A1812 /* TimerCount.swift */,
-				810D05082898E6E200C41F9A /* TimerWindow.swift */,
 				810D050A2898EFB000C41F9A /* TimerClass.swift */,
 				818CD75728A15FF600A9B25E /* AlertTimer.swift */,
 			);
@@ -414,7 +411,6 @@
 				81CA36E62897CC7700BFB9E6 /* StopWatchButton.swift in Sources */,
 				81690368288197CE007A1812 /* TimerCount.swift in Sources */,
 				8144C16A2891CC7C000E8570 /* StopWatch.swift in Sources */,
-				810D05092898E6E200C41F9A /* TimerWindow.swift in Sources */,
 				816E6F0D288161E500E64482 /* AlarmProjectApp.swift in Sources */,
 				81A6BF182B32EC1D00A4F4C9 /* KeyBoard.swift in Sources */,
 				818CD75A28A206D600A9B25E /* AnalogClock.swift in Sources */,
