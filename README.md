@@ -1,4 +1,6 @@
-# Alarm_Project
+# 콰람
+
+<img src="https://github.com/user-attachments/assets/7895fe4b-e9d3-48b4-ab94-fdecfbc589e9" width="12.5%" height="25%">
 
 ![image](https://user-images.githubusercontent.com/31721255/225783374-3ba99ab9-9e29-4faa-a0ae-2fcd8057874c.png)
 
@@ -6,6 +8,15 @@
 💡 아이폰 알람이 너무 시끄럽고 정신없다는 생각을 하던 중 “그냥 가볍게 푸시알림으로만 알람이 떴으면 좋겠다”라는 생각을 하게 되어 첫 프로젝트로 선정하게 되었습니다. 기존 타사 알람어플처럼 알람시계, 타이머, 스톱워치 등 기능도 추가하여 다용도로 사용할 수 있도록 개발했습니다.
 
 </aside>
+
+---
+
+### 💻 기술스택
+
+- Swift
+- SwiftUI
+- CoreData
+- UserNotification
 
 ### 📱 주요 기능 & 레이아웃
 
